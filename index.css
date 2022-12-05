@@ -16,7 +16,7 @@ body{
 .menu{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     position: sticky;
     color: #262626;
 }
@@ -44,10 +44,19 @@ body{
     column-gap: 30px;
 }
 .stories img{
-    width: 50px;
-    height: 50px;
+    width: 66px;
+    height: 66px;
     border-radius: 50%;
-    border: 2px solid red;
+    border: 3px solid transparent;
+    margin-right: 20px;
+    background: linear-gradient(to bottom, #ff009d 65%, #ffcc00 100%);
+}
+.stories{
+    background-color: #FFFFFF;
+    padding: 20px 0 20px 20px;
+    border: 1px solid #C7C7C7;
+    border-radius: 12px;
+    margin-bottom: 30px;
 }
 .feeds{
     display: flex;
