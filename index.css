@@ -10,7 +10,8 @@ body{
 .flexContainer{
     display: flex;
     flex-direction: row;
-    gap: 280px;
+    gap: 140px;
+    padding: 30px;
 }
 .menu{
     display: flex;
@@ -55,17 +56,89 @@ body{
 .ownerAccount{
     display: flex;
     flex-direction: row;
+    gap: 10px;
+    margin-top: 16px;
+}
+#account__circle{
+    font-size: 50px;
+    margin: 0;
+}
+.ownerAccount h4{
+    padding-left: 70px;
+    color: #0095F6;
+    font-size: 12px;
+}
+#account__info h5{
+    color: #262626;
+    font-size: 14px;
+}
+#account__info p{
+    padding-top: 6px;
+    color: #8E8E8E;
+    font-size: 14px;
 }
 .suggestions{
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.suggestions p{
+    font-size: 14px;
+    color: #8E8E8E;
+}
+.suggestions h6{
+    font-size: 12px;
+    color: #262626;
 }
 #follow__profile{
     display: flex;
     flex-direction: row;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 12px;
+}
+#follow__profile img{
+    border-radius: 50%;
+    margin-top: 4px;
+}
+#follow__me{
+    margin: 0;
+}
+
+#follow__me h5{
+    font-size: 14px;
+    color: #262626;
+}
+#follow__me p{
+    font-size: 12px;
+    color: #8E8E8E;
+    
+}
+#follow{
+    font-size: 12px;
+    color: #0095F6;
+    padding-left: 35px;
 }
 #footer__info{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+#footer__info p{
+    font-size: 12px;
+    padding-top: 20px;
+    color: #C7C7C7;
+}
+#lang{
+    font-size: 12px;
+    padding-top: 8px;
+    color: #C7C7C7;
+}
+#copy{
+    font-size: 12px;
+    padding-top: 20px;
+    color: #C7C7C7;
 }
