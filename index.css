@@ -10,12 +10,14 @@ body{
 .flexContainer{
     display: flex;
     flex-direction: row;
-    gap: 140px;
+    gap: 270px;
     padding: 30px;
 }
 .menu{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    border-right: 1px solid #C7C7C7;
     gap: 20px;
     position: sticky;
     color: #262626;
@@ -48,7 +50,7 @@ body{
     height: 66px;
     border-radius: 50%;
     border: 3px solid transparent;
-    margin-right: 20px;
+    margin-right: 4px;
     background: linear-gradient(to bottom, #ff009d 65%, #ffcc00 100%);
 }
 .stories{
@@ -57,10 +59,23 @@ body{
     border: 1px solid #C7C7C7;
     border-radius: 12px;
     margin-bottom: 30px;
+    width: 470px;
 }
 .feeds{
     display: flex;
     flex-direction: column;
+}
+.feeds1{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    border: 1px solid #C7C7C7;
+    border-radius: 12px 12px 0 0;
+    padding: 30px;
+    
+}
+#more__icon{
+    justify-self: right;
 }
 .ownerAccount{
     display: flex;
