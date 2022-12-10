@@ -44,6 +44,7 @@ body{
     'header header header right right'
     'main main main right right';
     column-gap: 30px;
+    
 }
 .stories img{
     width: 66px;
