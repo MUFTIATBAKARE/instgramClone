@@ -14,13 +14,13 @@
             <img src="/assets/svgexport-1.svg" alt="instaLogo" width="100px" height="80px" id="instaLogo">
             <span>
                 <a href="#">
-                    <img src="/assets/svgexport-2.svg" alt="homeIcon" id="homeIcon">
+                    <img src="/assets/svgexport-2.svg" alt="homeIcon" id="menuIcon">
                     <p><b> Home </b></p>
                 </a>
             </span>
             <span>
                 <a href="#">
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined" id="menuIcon">
                         search
                     </span>
                     <p>Search</p>
@@ -28,7 +28,7 @@
             </span>
             <span>
                 <a href="#">
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined" id="menuIcon">
                         explore
                     </span>
                     <p>Explore</p>
@@ -42,7 +42,7 @@
             </span>
             <span>
                 <a href="#">
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined" id="menuIcon">
                         favorite
                     </span>
                     <p> Notifications </p>
@@ -50,7 +50,7 @@
             </span>
             <span>
                 <a href="#">
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined" id="menuIcon">
                         add_box
                     </span>
                     <p> Create</p>
@@ -58,7 +58,7 @@
             </span>
             <span>
                 <a href="#">
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined" id="menuIcon">
                         account_circle
                     </span>
                     <p> Profile </p>
@@ -66,21 +66,44 @@
             </span>
             <span>
                 <a href="#">
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined" id="menuIcon">
                         menu
                     </span>
                     <p> More </p>
                 </a>
-            </span>
+            </span>`
         </aside>
         <main class="gridContainer">
             <div class="stories">
-                <img src="/assets/stories1.jpg" alt="">
-                <img src="/assets/stories2.jpeg" alt="">
-                <img src="/assets/stories3.png" alt="">
-                <img src="/assets/stories4.jpg" alt="">
-                <img src="/assets/stories5.jpg" alt="">
-                <img src="/assets/stories6.jpeg" alt="">
+                <span id="stories">
+                    <img src="/assets/stories1.jpg" alt="" width="66px" height="66px">
+                    <p>Koladebadmus</p>
+                </span>
+                <span id="stories">
+                    <img src="/assets/stories2.jpeg" alt="" width="66px" height="66px">
+                    <p>afrobysara</p>
+                </span>
+                <span id="stories">
+                    <img src="/assets/stories3.png" alt="" width="66px" height="66px">
+                    <p>ingressive4real</p>
+                </span>
+                <span id="stories">
+                    <img src="/assets/stories4.jpg" alt="" width="66px" height="66px">
+                    <p>muftee_sphere</p>
+                </span>
+                <span id="stories">
+                    <img src="/assets/stories5.jpg" alt="" width="66px" height="66px">
+                    <p>solidstarts</p>
+                </span>
+                <span id="stories">
+                    <span id="storiesLast">
+                        <img src="/assets/stories6.jpeg" alt="" width="66px" height="66px">
+                        <p>bellanaija</p>
+                    </span>
+                    <span class="material-symbols-outlined" id="arrow1">
+                        chevron_right
+                    </span>
+                </span>
             </div>
             <div class="feeds">
                 <span id="feeds">
@@ -88,8 +111,8 @@
                         <span id="feedsTop">
                             <img src="/assets/follow4.jpg" alt="" width="24px" height="24px">
                             <span>
-                                <p>BolajiLawan</p>
-                                <p>Lagos, Nigeria</p>
+                                <h6 id="p1">BolajiLawan</h6>
+                                <p id="p2">Lagos, Nigeria</p>
                             </span>
                         </span>
                         <span class="material-symbols-outlined" id="more__icon">
@@ -99,27 +122,27 @@
                     <img src="/assets/feeds1.jpg" alt="" width="470px" height="363px">
                     <span class="feedsBottom">
                         <span id="feedsBottom">
-                            <span>
-                                <span class="material-symbols-outlined">
+                            <span id="feedsBottomIcons">
+                                <span class="material-symbols-outlined" id="favoriteIcon">
                                     favorite
                                 </span>
                                 <img src="/assets/chatIcon.svg" alt="" width="24px" height="24px">
-                                <img src="/assets/svgexport-15.svg" alt="messagesIcon" id="messagesIcon">
+                                <img src="/assets/svgexport-15.svg" alt="messagesIcon"  width="24px" height="24px">
                             </span>
                             <img src="/assets/svgexport-18.svg" alt="" width="24px" height="24px">
                         </span>
                         <span class="feedsBottomLike">
-                            <img src="/assets/feeds2.jpeg" alt="" " width="24px" height="24px">
-                            <p>Liked by fiyinfoluwa and others</p>
+                            <img src="/assets/feeds2.jpg" alt="" width="24px" height="24px">
+                            <p id="p4">Liked by fiyinfoluwa and others</p>
                         </span>
-                        <p><b>bolajilawan</b>  Our lives are a reflection of... more</p>
-                        <p>3 DAYS AGO</p>
+                        <p id="p5"><b>bolajilawan</b>  Our lives are a reflection of... more</p>
+                        <p id="p3">3 DAYS AGO</p>
                         <span class="feedsBottomComment">
-                            <span>
+                            <span id="feedsBottomComment">
                                 <img src="/assets/svgexport-19.svg" alt=""  width="24px" height="24px">
                                 <input type="text" placeholder="Add a comment">
                             </span>
-                            <p>Post</p>
+                            <p id="p6">Post</p>
                         </span>
                     </span>
                 </span>
@@ -128,38 +151,38 @@
                         <span id="feedsTop">
                             <img src="/assets/follow4.jpg" alt="" width="24px" height="24px">
                             <span>
-                                <p>BolajiLawan</p>
-                                <p>Lagos, Nigeria</p>
+                                <h6 id="p1">BolajiLawan</h6>
+                                <p id="p2">Lagos, Nigeria</p>
                             </span>
                         </span>
                         <span class="material-symbols-outlined" id="more__icon">
                             more_horiz
                         </span>
                     </span>
-                    <img src="/assets/feeds2.jpeg" alt="" width="470px" height="363px">
+                    <img src="/assets/feeds2.jpg" alt="" width="470px" height="363px">
                     <span class="feedsBottom">
                         <span id="feedsBottom">
-                            <span>
-                                <span class="material-symbols-outlined">
+                            <span id="feedsBottomIcons">
+                                <span class="material-symbols-outlined" id="favoriteIcon">
                                     favorite
                                 </span>
                                 <img src="/assets/chatIcon.svg" alt="" width="24px" height="24px">
-                                <img src="/assets/svgexport-15.svg" alt="messagesIcon" id="messagesIcon">
+                                <img src="/assets/svgexport-15.svg" alt="messagesIcon"  width="24px" height="24px">
                             </span>
                             <img src="/assets/svgexport-18.svg" alt="" width="24px" height="24px">
                         </span>
                         <span class="feedsBottomLike">
-                            <img src="/assets/feeds2.jpeg" alt="" " width="24px" height="24px">
-                            <p>Liked by fiyinfoluwa and others</p>
+                            <img src="/assets/feeds2.jpg" alt="" width="24px" height="24px">
+                            <p id="p4">Liked by fiyinfoluwa and others</p>
                         </span>
-                        <p><b>bolajilawan</b>  Our lives are a reflection of... more</p>
-                        <p>3 DAYS AGO</p>
+                        <p id="p5"><b>bolajilawan</b>  Our lives are a reflection of... more</p>
+                        <p id="p3">3 DAYS AGO</p>
                         <span class="feedsBottomComment">
-                            <span>
+                            <span id="feedsBottomComment">
                                 <img src="/assets/svgexport-19.svg" alt=""  width="24px" height="24px">
                                 <input type="text" placeholder="Add a comment">
                             </span>
-                            <p>Post</p>
+                            <p id="p6">Post</p>
                         </span>
                     </span>
                 </span>
@@ -168,8 +191,8 @@
                         <span id="feedsTop">
                             <img src="/assets/follow4.jpg" alt="" width="24px" height="24px">
                             <span>
-                                <p>BolajiLawan</p>
-                                <p>Lagos, Nigeria</p>
+                                <h6 id="p1">BolajiLawan</h6>
+                                <p id="p2">Lagos, Nigeria</p>
                             </span>
                         </span>
                         <span class="material-symbols-outlined" id="more__icon">
@@ -179,27 +202,27 @@
                     <img src="/assets/feeds3.jpeg" alt="" width="470px" height="363px">
                     <span class="feedsBottom">
                         <span id="feedsBottom">
-                            <span>
-                                <span class="material-symbols-outlined">
+                            <span id="feedsBottomIcons">
+                                <span class="material-symbols-outlined" id="favoriteIcon">
                                     favorite
                                 </span>
                                 <img src="/assets/chatIcon.svg" alt="" width="24px" height="24px">
-                                <img src="/assets/svgexport-15.svg" alt="messagesIcon" id="messagesIcon">
+                                <img src="/assets/svgexport-15.svg" alt="messagesIcon" width="24px" height="24px">
                             </span>
                             <img src="/assets/svgexport-18.svg" alt="" width="24px" height="24px">
                         </span>
                         <span class="feedsBottomLike">
-                            <img src="/assets/feeds2.jpeg" alt="" " width="24px" height="24px">
-                            <p>Liked by fiyinfoluwa and others</p>
+                            <img src="/assets/feeds2.jpg" alt="" width="24px" height="24px">
+                            <p id="p4">Liked by fiyinfoluwa and others</p>
                         </span>
-                        <p><b>bolajilawan</b>  Our lives are a reflection of... more</p>
-                        <p>3 DAYS AGO</p>
+                        <p id="p5"><b>bolajilawan</b>  Our lives are a reflection of... more</p>
+                        <p id="p3">3 DAYS AGO</p>
                         <span class="feedsBottomComment">
-                            <span>
+                            <span id="feedsBottomComment">
                                 <img src="/assets/svgexport-19.svg" alt=""  width="24px" height="24px">
                                 <input type="text" placeholder="Add a comment">
                             </span>
-                            <p>Post</p>
+                            <p id="p6">Post</p>
                         </span>
                     </span>
                 </span>
@@ -208,8 +231,8 @@
                         <span id="feedsTop">
                             <img src="/assets/follow4.jpg" alt="" width="24px" height="24px">
                             <span>
-                                <p>BolajiLawan</p>
-                                <p>Lagos, Nigeria</p>
+                                <h6 id="p1">BolajiLawan</h6>
+                                <p id="p2">Lagos, Nigeria</p>
                             </span>
                         </span>
                         <span class="material-symbols-outlined" id="more__icon">
@@ -219,27 +242,27 @@
                     <img src="/assets/feeds4.jpg" alt="" width="470px" height="363px">
                     <span class="feedsBottom">
                         <span id="feedsBottom">
-                            <span>
-                                <span class="material-symbols-outlined">
+                            <span id="feedsBottomIcons">
+                                <span class="material-symbols-outlined" id="favoriteIcon">
                                     favorite
                                 </span>
                                 <img src="/assets/chatIcon.svg" alt="" width="24px" height="24px">
-                                <img src="/assets/svgexport-15.svg" alt="messagesIcon" id="messagesIcon">
+                                <img src="/assets/svgexport-15.svg" alt="messagesIcon"  width="24px" height="24px">
                             </span>
                             <img src="/assets/svgexport-18.svg" alt="" width="24px" height="24px">
                         </span>
                         <span class="feedsBottomLike">
-                            <img src="/assets/feeds2.jpeg" alt="" " width="24px" height="24px">
-                            <p>Liked by fiyinfoluwa and others</p>
+                            <img src="/assets/feeds2.jpg" alt="" width="24px" height="24px">
+                            <p id="p4">Liked by fiyinfoluwa and others</p>
                         </span>
-                        <p><b>bolajilawan</b>  Our lives are a reflection of... more</p>
-                        <p>3 DAYS AGO</p>
+                        <p id="p5"> <b>bolajilawan</b>  Our lives are a reflection of... more</p>
+                        <p id="p3">3 DAYS AGO</p>
                         <span class="feedsBottomComment">
-                            <span>
+                            <span id="feedsBottomComment">
                                 <img src="/assets/svgexport-19.svg" alt=""  width="24px" height="24px">
                                 <input type="text" placeholder="Add a comment">
                             </span>
-                            <p>Post</p>
+                            <p id="p6">Post</p>
                         </span>
                     </span>
                 </span>

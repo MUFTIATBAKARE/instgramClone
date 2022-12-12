@@ -36,7 +36,10 @@ body{
     margin-top: 20px;
 }
 #messagesIcon{
-    width: 16px;
+    width: 18px;
+}
+#menuIcon{
+    font-weight: 700;
 }
 .stories{
     grid-area: header;
@@ -58,20 +61,42 @@ body{
     column-gap: 30px;
 }
 .stories img{
-    width: 66px;
-    height: 66px;
     border-radius: 50%;
     border: 3px solid transparent;
-    margin-right: 4px;
     background: linear-gradient(to bottom, #ff009d 65%, #ffcc00 100%);
 }
 .stories{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    gap: 12px;
     background-color: #FFFFFF;
+    margin: 0;
     padding: 20px 0 20px 20px;
     border: 1px solid #C7C7C7;
     border-radius: 12px;
     margin-bottom: 30px;
     width: 470px;
+}
+#stories{
+    display: flex;
+    flex-direction: column;
+}
+#storiesLast{
+    position: relative;
+}
+#arrow1{
+    position: absolute;
+    z-index: 1;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    top: 70px;
+    left: 440px;
+}
+#stories p{
+    font-size: 10px;
+    text-align: center;
 }
 .feeds{
     display: flex;
@@ -86,42 +111,91 @@ body{
     justify-content: space-between;
     border: 1px solid #C7C7C7;
     border-radius: 12px 12px 0 0;
-    padding: 30px;
+    padding: 10px;
+}
+#p1{
+    font-size: 14px;
+    color: #262626;
+}
+#p2{
+    font-size: 12px;
+    color: #262626;
 }
 .feedsBottom{
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border: 1px solid #C7C7C7;
+    border-top: none;
     border-radius: 0 0 12px 12px;
-    padding: 20px;
-    margin: 0;
 }
 #feedsTop{
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 10px;
+}
+#feedsBottomIcons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 #feedsBottom{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 20px 20px 0;
 }
 .feedsBottomLike{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+#feedsBottomComment{
+    padding: 0 20px 20px;
+}
+#p3{
+    font-size: 10px;
+    padding: 0 20px;
+    padding-top: 4px;
+}
+#p4{
+    font-size: 12px;
+}
+#p5{
+    font-size: 14px;
+    padding: 0 20px;
+}
+#p6{
+    color: #b3dbff;
+    padding: 0 20px 20px;
 }
 .feedsBottomComment{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 10px;
+    border-top: 1px solid #C7C7C7;
+    padding-top: 20px;
+}
+#favoriteIcon{
+    font-size: 30px;
+}
+input[type=text] {
+    border: none;
+    padding: 4px 10px;
+}
+input[type=text]:focus {
+    outline: none;
 }
 .feedsBottomComment span{
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    background-color: #ff009d;
+    gap: 10px;
 }
 #more__icon{
     justify-self: right;
